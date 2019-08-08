@@ -1,0 +1,10 @@
+@import "./general_custom.scss";
+@import "./pro_and_ser_mixin.scss";
+/********page specific settings*******/
+#jobInfo {
+  .card {
+    background-color: $cardBGColor;
+    border-color: $secondaryColor;
+    @include detail_contents;
+  }
+}

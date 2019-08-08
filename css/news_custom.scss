@@ -1,0 +1,23 @@
+@import "./general_custom.scss";
+
+/********page specific settings*******/
+#news {
+  ul {
+    list-style-type: none;
+  }
+  ul li {
+    display: block;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px dotted $secondaryColor;
+  }
+  ul li a {
+    text-decoration: none;
+  }
+  ul a .date {
+    color: $secondaryColor;
+  }
+  ul a p {
+    color: black;
+  }
+}

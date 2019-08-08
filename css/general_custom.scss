@@ -1,0 +1,71 @@
+//variables
+$primaryColor: #54d30c;
+$secondaryColor: #b7d30c;
+$bodyBGColor: whitesmoke;
+$h3Color: #5a4e44;
+$cardBGColor: #faf5ea;
+
+/********general settings start*******/
+body {
+  background-color: $bodyBGColor;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+h3 {
+  color: $h3Color;
+}
+#top-adrs p {
+  margin-bottom: 0.5rem;
+}
+.btn,
+.btn-success {
+  background-color: $primaryColor;
+  border: 0px;
+}
+
+#top-adrs .btn .material-icons {
+  vertical-align: middle;
+}
+
+.navbar {
+  min-height: 5rem;
+}
+
+#footlogo {
+  width: 5rem;
+}
+footer .num {
+  border-right: 2px solid $secondaryColor;
+}
+#footerMap {
+  width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li {
+    border-right: 2px solid $secondaryColor;
+    &:last-of-type {
+      border-right: 0px;
+    }
+  }
+  .navbar-nav > li > a {
+    font-size: 1.5rem;
+    margin: auto 0.5rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-align: center;
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+/********general settings end*******/

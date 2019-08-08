@@ -1,0 +1,54 @@
+@mixin main_h3 {
+  text-transform: uppercase;
+}
+
+@mixin detail_section {
+  background-color: $cardBGColor;
+  border-radius: 7px;
+}
+
+@mixin carousel_pre_next_control {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $primaryColor;
+    padding: 1rem;
+    border: 1px solid $bodyBGColor;
+  }
+}
+
+@mixin carousel_indicator_control {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: $primaryColor;
+}
+
+@mixin navtabs {
+  li a {
+    background-color: $cardBGColor;
+    color: $secondaryColor;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .active {
+    color: $h3Color;
+  }
+}
+
+@mixin detail_contents {
+  ul {
+    list-style-type: none;
+  }
+  ul li {
+    margin: 1rem 0;
+    &:before {
+      content: "\2022";
+      color: $primaryColor;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}

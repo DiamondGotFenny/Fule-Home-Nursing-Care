@@ -1,0 +1,33 @@
+@import "./general_custom.scss";
+@import "./pro_and_ser_mixin.scss";
+
+/********page specific settings*******/
+/******** 
+the layouts of property feature page and the service guide page are almost the same, 
+the only difference is the selectors,so I use mixin here to dry the code, 
+********/
+
+main h3 {
+  @include main_h3;
+}
+#servicesDetails {
+  @include detail_section;
+}
+
+#serviceCarousel {
+  @include carousel_pre_next_control;
+}
+#serviceCarousel .carousel-indicators li {
+  @include carousel_indicator_control;
+}
+
+#navtabs {
+  @include navtabs;
+}
+
+#caresev,
+#medicont,
+#recreationserv,
+#homeserv {
+  @include detail_contents;
+}

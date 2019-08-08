@@ -1,0 +1,106 @@
+/********general settings start*******/
+body {
+  background-color: whitesmoke;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h3 {
+  color: #5a4e44;
+}
+
+#top-adrs p {
+  margin-bottom: 0.5rem;
+}
+
+.btn,
+.btn-success {
+  background-color: #54d30c;
+  border: 0px;
+}
+
+#top-adrs .btn .material-icons {
+  vertical-align: middle;
+}
+
+.navbar {
+  min-height: 5rem;
+}
+
+#footlogo {
+  width: 5rem;
+}
+
+footer .num {
+  border-right: 2px solid #b7d30c;
+}
+
+#footerMap {
+  width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li {
+    border-right: 2px solid #b7d30c;
+  }
+  .navbar-nav li:last-of-type {
+    border-right: 0px;
+  }
+  .navbar-nav > li > a {
+    font-size: 1.5rem;
+    margin: auto 0.5rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #b7d30c;
+  }
+}
+
+/********general settings end*******/
+/********page specific settings*******/
+#introTitle {
+  text-transform: uppercase;
+}
+
+#targetCustomer,
+#ourTeam {
+  background-color: #faf5ea;
+  margin-top: 3rem;
+}
+
+#targetCustomer ul,
+#ourTeam ul {
+  list-style-type: none;
+}
+
+#targetCustomer li,
+#ourTeam li {
+  margin: 1rem 0;
+}
+
+#targetCustomer li:before,
+#ourTeam li:before {
+  content: "\2022";
+  color: #54d30c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#ourTeam {
+  margin-top: 0;
+}
+
+#targetpic,
+#teampic {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=aboutUs_custom.css.map */

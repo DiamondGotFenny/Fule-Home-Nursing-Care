@@ -1,0 +1,104 @@
+@import "./general_custom.scss";
+
+/********page specific settings*******/
+.carousel-caption h3 {
+  color: lighten($color: $primaryColor, $amount: 50%);
+}
+.welcome-pic,
+.advan-pic {
+  border-radius: 50%;
+}
+
+.card {
+  background-color: $cardBGColor;
+}
+#svic-fers .card-header {
+  font-size: 1.4rem;
+  color: $secondaryColor;
+  border-bottom: 0px;
+  background-color: $cardBGColor;
+}
+#svic-fers .card-title {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+
+  /* gradient buttom line start */
+  background: linear-gradient(
+      to right,
+      rgba(255, 69, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    bottom transparent no-repeat;
+  background-size: 100% 1px;
+  /* gradient buttom line end */
+}
+
+#svic-fers .card-footer {
+  border-top: 0px;
+  background-color: $cardBGColor;
+}
+
+#custTesti {
+  background-color: $cardBGColor;
+  .card {
+    border: 0px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $primaryColor;
+    padding: 1rem;
+    border: 1px solid $bodyBGColor;
+  }
+}
+
+#custTesti .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: $primaryColor;
+}
+#appointment {
+  background: url(../imgs/img_index/bottombannerbg_small.jpg) no-repeat;
+  background-size: cover;
+  color: $bodyBGColor;
+  h1 {
+    text-transform: uppercase;
+  }
+
+  #apotbtn {
+    width: 15rem;
+    font-weight: 600;
+    background-color: rgba($color: $bodyBGColor, $alpha: 0.5);
+    color: $primaryColor;
+    &:hover {
+      background-color: rgba($color: $bodyBGColor, $alpha: 1);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #custTesti {
+    background-color: cardBGColor;
+    .carousel-inner .carousel-item .card-deck {
+      width: 70%;
+      .card {
+        border: 0px;
+      }
+    }
+  }
+
+  #appointment {
+    background: url(../imgs/img_index/bottombannerbg_large.jpg) no-repeat;
+    background-size: cover;
+    #banner-content {
+      margin-top: 3rem;
+    }
+  }
+
+  #appointment #apotbtn {
+    width: 20rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
